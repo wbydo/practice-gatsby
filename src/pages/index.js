@@ -1,3 +1,11 @@
 import React from "react"
+import { Link } from "gatsby"
 
-export default () => <div>Hello world!</div>
+import Header from "../components/header"
+
+export default () => (
+  <div>
+    <Header />
+    <p>Go to <Link to="/about/">about page</Link>.</p>
+  </div>
+)
